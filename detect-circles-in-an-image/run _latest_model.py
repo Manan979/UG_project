@@ -12,7 +12,7 @@ def calculate_distance(pt1, pt2):
     return np.sqrt((pt1[0] - pt2[0]) ** 2 + (pt1[1] - pt2[1]) ** 2)
 
 # Load the image
-image = cv2.imread('./new_test_data/zrb2.jpg')
+image = cv2.imread('./new_test_data/IMG-20230406-WA0010.jpg')
 
 # Display the image and use cv2.setMouseCallback() to select the endpoints of the scale bar
 points = []
@@ -45,7 +45,7 @@ model = torch.hub.load(
 )
 
 # Read the image
-name = 'zrb2.jpg'
+name = 'IMG-20230406-WA0010.jpg'
 im = './new_test_data/' + name
 img = cv2.imread(im)
 
